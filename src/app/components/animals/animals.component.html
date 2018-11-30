@@ -1,0 +1,7 @@
+<h1>Our Animals</h1>
+<div class="animals" *ngFor="let animal of animals">
+  <label>Name: </label><a>{{animal.name}}</a><br>
+  <label>Age: </label><a>{{animal.age}}</a><br>
+  <label>Gender: </label><a>{{animal.gender}}</a>
+  <img src="{{animal.image}}" [routerLink]="['/animal-page', animal.id]">
+</div>
