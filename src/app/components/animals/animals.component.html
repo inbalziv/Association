@@ -1,7 +1,16 @@
-<h1>Our Animals</h1>
+<h2>
+  Our Animals
+</h2>
+<div class="our-animals">
 <div class="animals" *ngFor="let animal of animals">
-  <label>Name: </label><a>{{animal.name}}</a><br>
-  <label>Age: </label><a>{{animal.age}}</a><br>
-  <label>Gender: </label><a>{{animal.gender}}</a>
-  <img src="{{animal.image}}" [routerLink]="['/animal-page', animal.id]">
+  <mat-card class="animal-card" >
+    <img mat-card-image src={{animal.image}}>
+    <mat-card-content>
+      <mat-card-title>Name: {{animal.name}}</mat-card-title>
+      <mat-card-subtitle>Age: {{animal.age}}</mat-card-subtitle>
+      <mat-card-subtitle>Gender: {{animal.gender}}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
 </div>
+</div>
+

@@ -1,5 +1,26 @@
 img {
   width: 450px;
-  height: 450px;
-  border:1px solid #021a40;
+  height: 350px;
+  border:1px solid lightgray;
+  alignment: center;
+
 }
+
+
+.mat-card {
+  float:left;
+  background-size: cover;
+}
+
+.mat-card-content {
+  padding-lefr: 20px;
+}
+
+
+h2 {
+  text-align: center;
+  line-height: 90px;
+}
+
+
+

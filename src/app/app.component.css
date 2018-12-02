@@ -1,4 +1,13 @@
 body,html {
   background-color: #f8f9fa;
-  margin-top: 4.5%;
+}
+
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 5%;
+}
+
+app-site-map {
+  alignment: bottom;
 }

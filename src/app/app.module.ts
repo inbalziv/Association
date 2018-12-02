@@ -7,9 +7,12 @@ import { SiteMapComponent } from './components/site-map/site-map.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { AnimalsComponent } from './components/animals/animals.component';
 import { AnimalPageComponent } from './components/animal-page/animal-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule  } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,14 @@ import { AnimalPageComponent } from './components/animal-page/animal-page.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+
+    MatMenuModule,
+    FormsModule,
+    MatCardModule,
+    MatIconModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'animals', component: AnimalsComponent },
