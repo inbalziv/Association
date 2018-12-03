@@ -12,15 +12,15 @@ export class AnimalPageComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    debugger;
+
     // this.route.paramMap
     //   .subscribe(id => console.log("id="+id));
-    this.sub = this.route.params.subscribe(params => {
-      this.id = +params['id']; // (+) converts string 'id' to a number
-    console.log("id="+this.id);
-      console.log("params="+params);
-      // In a real app: dispatch action to load the details here.
-    });
+    // this.sub = this.route.params.subscribe(params => {
+    //   this.id = +params['id']; // (+) converts string 'id' to a number
+    // console.log("id="+this.id);
+    //   console.log("params="+params);
+    //   // In a real app: dispatch action to load the details here.
+    // });
   }
   ngOnDestroy() {
     this.sub.unsubscribe();

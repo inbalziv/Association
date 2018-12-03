@@ -3,7 +3,7 @@
 </h2>
 <div class="our-animals">
 <div class="animals" *ngFor="let animal of animals">
-  <mat-card class="animal-card" >
+  <mat-card class="animal-card" [routerLink]="['/animal-page', animal.id]">
     <img mat-card-image src={{animal.image}}>
     <mat-card-content>
       <mat-card-title>Name: {{animal.name}}</mat-card-title>
