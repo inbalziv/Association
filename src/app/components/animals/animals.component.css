@@ -10,6 +10,7 @@ img {
 .mat-card {
   float:left;
   background-size: cover;
+  cursor: pointer;
 }
 
 .mat-card-content {

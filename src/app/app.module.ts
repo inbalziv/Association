@@ -13,6 +13,7 @@ import { AnimalsComponent } from './components/animals/animals.component';
 import { AnimalPageComponent } from './components/animal-page/animal-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule  } from '@angular/material';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIco
     JobsComponent,
     HomeComponent,
     AnimalsComponent,
-    AnimalPageComponent
+    AnimalPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -31,18 +33,35 @@ import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIco
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-
     MatMenuModule,
     FormsModule,
     MatCardModule,
     MatIconModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
-      { path: 'animals', component: AnimalsComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'jobs', component: JobsComponent },
-      { path: 'animal-page/:id', component: AnimalPageComponent },
-
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'animals',
+        component: AnimalsComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'jobs',
+        component: JobsComponent
+      },
+      {
+        path: 'animal-page/:id',
+        component: AnimalPageComponent
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
+      }
     ])
 ],
   providers: [],

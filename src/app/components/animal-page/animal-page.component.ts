@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute} from '@angular/router';
+import {AnimalsService} from '../../services/animals.service';
+import {IAnimal} from '../../interfaces/ianimal';
 
 @Component({
   selector: 'app-animal-page',
@@ -7,22 +9,14 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./animal-page.component.css']
 })
 export class AnimalPageComponent implements OnInit {
-  id: number;
-  private sub: any;
-  constructor(private route: ActivatedRoute) { }
+  id: string;
+  animal: IAnimal;
+  constructor(private route: ActivatedRoute, private animalsService: AnimalsService) { }
 
   ngOnInit() {
-
-    // this.route.paramMap
-    //   .subscribe(id => console.log("id="+id));
-    // this.sub = this.route.params.subscribe(params => {
-    //   this.id = +params['id']; // (+) converts string 'id' to a number
-    // console.log("id="+this.id);
-    //   console.log("params="+params);
-    //   // In a real app: dispatch action to load the details here.
-    // });
-  }
-  ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.route.paramMap.subscribe(params => {
+      this.id = params.get('id');
+    });
+    this.animal = this.animalsService.getAnimal(this.id);
   }
 }
