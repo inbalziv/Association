@@ -14,6 +14,10 @@ import { AnimalPageComponent } from './components/animal-page/animal-page.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule  } from '@angular/material';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PermanentlyAdoptionComponent } from './components/permanently-adoption/permanently-adoption.component';
+import { AdoptionOptionComponent } from './components/adoption-option/adoption-option.component';
+import { AdoptionTemporaryComponent } from './components/adoption-temporary/adoption-temporary.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     HomeComponent,
     AnimalsComponent,
     AnimalPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PermanentlyAdoptionComponent,
+    AdoptionOptionComponent,
+    AdoptionTemporaryComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     FormsModule,
     MatCardModule,
     MatIconModule,
+    MatGridListModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -57,6 +65,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
       {
         path: 'animal-page/:id',
         component: AnimalPageComponent
+      },
+      {
+        path: 'adoption',
+        component: PermanentlyAdoptionComponent
       },
       {
         path: '**',

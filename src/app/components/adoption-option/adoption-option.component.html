@@ -1,0 +1,11 @@
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <button class="permanently" onclick="this.setAdoptionOption('permanently')">Permanently Adoption</button>
+    <app-permanently-adoption *ngIf="this.adoptionType === 'permanently'"></app-permanently-adoption>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="permanently" onclick="this.setAdoptionOption('temporary')">Temporary Adoption</button>
+    <app-adoption-temporary *ngIf="this.adoptionType === 'temporary'"></app-adoption-temporary>
+  </mat-grid-tile>
+</mat-grid-list>
+
