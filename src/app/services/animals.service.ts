@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AnimalsService implements IAnimal {
+export class AnimalsService {
   animals: IAnimal[];
 
   constructor() {
