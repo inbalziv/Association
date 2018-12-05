@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdoptionOptionComponent implements OnInit {
   adoptionType = 'NA';
+  cols = 2;
   constructor() { }
 
   ngOnInit() {
   }
   setAdoptionOption(adoption: string) {
     this.adoptionType = adoption === 'permanently' || 'temporary' ? adoption : 'NA';
-    debugger;
+    this.cols = 1;
   }
 }

@@ -11,5 +11,7 @@ export class AdoptionTemporaryComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  submitForm() {
+    alert("submitted");
+  }
 }
