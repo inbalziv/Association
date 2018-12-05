@@ -37,6 +37,10 @@ body{
   cursor: pointer;
   margin-top: 10%;
 }
+.form-check {
+  position: absolute;
+  padding-bottom: 10%;
+}
 .btnContactSubmit
 {
   width: 50%;
