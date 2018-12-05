@@ -1,7 +1,8 @@
 <div class="adoption">
+  <div class="process">
   <h2>Interested in a one night adopting?</h2>
   <h5>Temporary Adoption Process</h5>
-  <p style="">Temporary adoption is for a one night. It gives the dog/cat option to get a warmer environment and gives the adopter joy and simulation of having a dog/cat at home</p>
+  <p>Temporary adoption is for a one night. It gives the dog/cat option to get a warmer environment and gives the adopter joy and simulation of having a dog/cat at home</p>
   <h6>
     The adopters must meet several conditions:
   </h6>
@@ -23,9 +24,10 @@
   <h6 class="hours">
     Sunday-Thursday (10:00 am – 6:30 pm), Friday (8:00 am – 1:30 pm), Saturday (11:00 am – 1:30 pm)
   </h6>
+  </div>
   <!-- Material form contact -->
-  <div class="card">
-
+  <div class="container mt-2">
+    <div class="card">
     <h5 class="card-header info-color white-text text-center py-4">
       <strong>Application Form for Temporary Adoption</strong>
     </h5>
@@ -34,47 +36,53 @@
     <div class="card-body px-lg-5 pt-0">
 
       <!-- Form -->
-      <form class="text-center" style="color: #757575;">
+      <form class="applicationForm" style="color: #757575;">
         <div class="row">
           <div class="col-md-6">
             <!-- First Name -->
             <div class="md-form mt-3">
-              <input type="text" id="materialContactFormFirstName" class="form-control">
               <label for="materialContactFormFirstName">First Name</label>
+              <input type="text" id="materialContactFormFirstName" class="form-control" required>
+
             </div>
             <!-- E-mail -->
             <div class="md-form mt-3">
-              <input type="email" id="materialContactFormEmail" class="form-control">
               <label for="materialContactFormEmail">E-mail</label>
+              <input type="email" id="materialContactFormEmail" class="form-control">
+
             </div>
-            <!-- terms -->
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="materialContactFormTerms">
-              <label class="form-check-label" for="materialContactFormTerms">Accept Terms</label>
+            <!-- Terms -->
+            <div class="md-form mt-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="materialContactFormTerms">
+                <label class="form-check-label" for="materialContactFormTerms">Accept Terms & Conditions</label>
+              </div>
+
             </div>
           </div>
           <div class="col-md-6">
             <!-- Last Name -->
             <div class="md-form mt-3">
-              <input type="text" id="materialContactFormLastName" class="form-control">
               <label for="materialContactFormLastName">Last Name</label>
+              <input type="text" id="materialContactFormLastName" class="form-control">
             </div>
             <!-- Phone Number -->
             <div class="md-form mt-3">
-              <input type="text" id="materialContactFormPhone" class="form-control">
               <label for="materialContactFormPhone">Phone Number</label>
+              <input type="text" id="materialContactFormPhone" class="form-control">
             </div>
 
           </div>
           <!-- Send button -->
-          <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+          <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" (click)="submitForm()">Send</button>
         </div>
       </form>
       <!-- Form -->
-
+    </div>
     </div>
 
   </div>
   <!-- Material form contact -->
 
 </div>
+

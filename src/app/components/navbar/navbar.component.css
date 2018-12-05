@@ -5,3 +5,7 @@ img {
 bg-light {
   background-color: #e9ecef;
 }
+
+.nav-item {
+  font-style: italic;
+}
