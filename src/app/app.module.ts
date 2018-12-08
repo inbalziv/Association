@@ -17,7 +17,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PermanentlyAdoptionComponent } from './components/permanently-adoption/permanently-adoption.component';
 import { AdoptionOptionComponent } from './components/adoption-option/adoption-option.component';
 import { AdoptionTemporaryComponent } from './components/adoption-temporary/adoption-temporary.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule,
     MatIconModule,
     MatGridListModule,
+    BsDatepickerModule.forRoot(),
     RouterModule.forRoot([
       {
         path: '',
