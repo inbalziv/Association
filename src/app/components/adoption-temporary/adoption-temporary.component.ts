@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DatePickerComponent} from 'ng2-date-picker';
-import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-adoption-temporary',
@@ -8,10 +7,11 @@ import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./adoption-temporary.component.css']
 })
 export class AdoptionTemporaryComponent implements OnInit {
-  model;
-  selectedDate;
 
-  constructor() { }
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

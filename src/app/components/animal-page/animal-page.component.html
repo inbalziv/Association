@@ -1,9 +1,11 @@
-<p>
-  animal-page works!
-</p>
 <div class="animal-info">
-  <p>Name: {{animal.name}}</p>
-  <p>Age: {{animal.age}}</p>
-  <p>ID: {{this.id}}</p>
+  <h3>About the {{animal.type}}</h3>
+  <img src={{animal.image}}>
+  <div class="animal-details">
+    <p>Name: {{animal.name}}</p>
+    <p>Age: {{animal.age}}</p>
+    <p>Gender: {{animal.gender}}</p>
+  </div>
+
 </div>
 <app-adoption-option></app-adoption-option>

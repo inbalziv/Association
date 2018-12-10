@@ -1,0 +1,18 @@
+h4 {
+  color: darkblue;
+}
+h6 {
+  color: darkcyan;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+}
