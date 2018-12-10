@@ -18,8 +18,6 @@ import { PermanentlyAdoptionComponent } from './components/permanently-adoption/
 import { AdoptionOptionComponent } from './components/adoption-option/adoption-option.component';
 import { AdoptionTemporaryComponent } from './components/adoption-temporary/adoption-temporary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
-import {DpDatePickerModule} from 'ng2-date-picker';
 
 @NgModule({
   declarations: [
@@ -37,8 +35,6 @@ import {DpDatePickerModule} from 'ng2-date-picker';
     AdoptionTemporaryComponent
   ],
   imports: [
-    NgbPaginationModule,
-    DpDatePickerModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
