@@ -1,4 +1,13 @@
 .site-map {
   background-color: lightslategray;
   height: 100%;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 10vw 30vw 10vw;
+  grid-gap: 1em;
+}
+.mat-grid-tile .mat-figure {
+  display: block;
+  padding-top: 15%;
+  margin-left: 30%;
 }
