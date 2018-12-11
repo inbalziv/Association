@@ -18,6 +18,7 @@ import { PermanentlyAdoptionComponent } from './components/permanently-adoption/
 import { AdoptionOptionComponent } from './components/adoption-option/adoption-option.component';
 import { AdoptionTemporaryComponent } from './components/adoption-temporary/adoption-temporary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     NotFoundComponent,
     PermanentlyAdoptionComponent,
     AdoptionOptionComponent,
-    AdoptionTemporaryComponent
+    AdoptionTemporaryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +71,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
       {
         path: 'adoption',
         component: PermanentlyAdoptionComponent
+      },
+      {
+        path: 'contact-us',
+        component: ContactUsComponent
       },
       {
         path: '**',
