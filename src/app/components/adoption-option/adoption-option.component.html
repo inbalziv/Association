@@ -1,3 +1,7 @@
+<div>
+  <h3>There are 2 option for adoptions - permanently and for a night.</h3>
+  <h6>Please click on the wanted option to get the full details on the process</h6>
+</div>
 <mat-grid-list cols="{{this.cols}}">
   <mat-grid-tile class="showPermanently" [hidden]="this.adoptionType === 'temporary'">
     <button class="permanently" (click)="this.setAdoptionOption('permanently')" [hidden]="this.adoptionType === 'permanently'">Permanently Adoption</button>
