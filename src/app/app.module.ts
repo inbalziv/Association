@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SiteMapComponent } from './components/site-map/site-map.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -19,6 +20,7 @@ import { AdoptionOptionComponent } from './components/adoption-option/adoption-o
 import { AdoptionTemporaryComponent } from './components/adoption-temporary/adoption-temporary.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     MatCardModule,
     MatIconModule,
     MatGridListModule,
+    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: '',
