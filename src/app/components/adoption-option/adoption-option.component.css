@@ -1,0 +1,10 @@
+h3 {
+  font-size: 22px;
+  padding-bottom: 2%;
+}
+h6 {
+  font-size: 14px;
+}
+mat-grid-list {
+  font-size: 150%;
+}

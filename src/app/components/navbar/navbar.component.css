@@ -9,3 +9,9 @@ bg-light {
 .nav-item {
   font-style: italic;
 }
+nav {
+  font-size: 150%;
+}
+.dropdown-item {
+  font-size: 150%;
+}
