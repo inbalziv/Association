@@ -21,6 +21,8 @@ import { AdoptionTemporaryComponent } from './components/adoption-temporary/adop
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { HttpModule } from '@angular/http';
+import { NgBootstrapFormValidationModule } from 'ng-bootstrap-form-validation';
+import {AnimalsService} from "./services/animals.service";
 
 @NgModule({
   declarations: [
@@ -50,7 +52,7 @@ import { HttpModule } from '@angular/http';
     MatIconModule,
     MatGridListModule,
     HttpClientModule,
-    HttpModule,
+    NgBootstrapFormValidationModule.forRoot(),
     RouterModule.forRoot([
       {
         path: '',
@@ -86,7 +88,7 @@ import { HttpModule } from '@angular/http';
       }
     ])
 ],
-  providers: [],
+  providers: [AnimalsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

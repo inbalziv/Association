@@ -4,6 +4,6 @@ export interface IAnimal {
   age: number;
   gender: 'female' | 'male';
   type: 'cat' | 'dog';
-  custodyDate: Date;
+  custodyDate: Date[];
   image: string;
 }

@@ -18,7 +18,7 @@ export class AnimalPageComponent implements OnInit {
       age: 4,
       gender: 'female',
       type: 'dog',
-      custodyDate: new Date("December 5 2018 12:30"),
+      custodyDate: [new Date("December 5 2018 12:30")],
       image: 'https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg'
     }
   }

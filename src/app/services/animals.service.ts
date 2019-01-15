@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import {IAnimal} from '../interfaces/ianimal';
 import {Observable} from 'rxjs';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
+import {A} from "@angular/cdk/keycodes";
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AnimalsService {
   animals: IAnimal[];
+ // results: Object[];
   baseDomain: string = 'http://localhost:57452/api/data/';
   httpOptions = {
     headers: new HttpHeaders({
@@ -23,6 +27,7 @@ export class AnimalsService {
 
 
   constructor(private _http: HttpClient) {
+  //  this.results = [];
   //   this.animals = [
   //     {
   //       id: "1",
@@ -77,10 +82,84 @@ export class AnimalsService {
   //   });
   // }
 
-  public getAllAnimals(): Observable<any> {
-    //return this.HttpGetRequest(this.baseDomain + "getAnimals");
+  public getAllAnimals(): Observable<any>{
     return this._http.get<Array<any>>(this.baseDomain + "getAnimals");
+    // let apiURL = this.baseDomain + "getAnimals";
+    //  const results = this._http.get(apiURL).subscribe(
+    // //  // debugger;
+    // // //  console.log(res);
+    // //   return res;
+    // // }
+    // );
+    // debugger;
+    // console.log(results);
+     // return this._http.get(apiURL)
+     //    .toPromise().then(
+     //     (res: any) => {
+     //        debugger;
+     //        console.log(res);
+     //        return res.results.map(item => {
+     //          return {
+     //            id: item.Aid,
+     //            name: item.Name,
+     //            age: item.Age,
+     //            gender: item.Gender,
+     //            type: item.Type,
+     //            custodyDate: item.CustodyDate,
+     //            image: item.Image
+     //        } as IAnimal;
+     //        });
+     //      }
+     //    );
+
+
+    // let promise = new Promise((resolve, reject) => {
+    //   let apiURL = this.baseDomain + "getAnimals";
+    //   this._http.get(apiURL)
+    //     .toPromise().then(
+    //       res => {
+    //         this.results = res.json().results.map(item => {
+    //           return new IAnimal = {
+    //             id: item.Aid,
+    //             name: item.Name,
+    //             age: item.Age,
+    //             gender: item.Gender,
+    //             type: item.Type,
+    //             custodyDate: item.CustodyDate,
+    //             image: item.Image
+    //         };
+    //         });
+    //         resolve();
+    //       },
+    //       msg => {
+    //         reject(msg);
+    //       }
+    //     );
+    // });
+    // return promise;
   }
+
+    // response.forEach(item => {
+    //     const animal: IAnimal = {
+    //       id: item['Aid'],
+    //         name: item['Name'],
+    //         age: item['Age'].toNumber(),
+    //         gender: 'female',
+    //         type: 'dog',
+    //         custodyDate: item['AdoptionDate'],
+    //         image: item['Image']
+    //     };
+    //       animalsList.push(animal);
+    //   });
+    // debugger;
+    // return animalsList;
+ // }
+
+
+  // public getAllAnimals(): Observable<any> {
+  //   //return this.HttpGetRequest(this.baseDomain + "getAnimals");
+  //   return this._http.get<Array<any>>(this.baseDomain + "getAnimals");
+  // }
   // private HttpGetRequest(apiDomain: string): Observable<any> {
   //   return this._http.get<any>(apiDomain);
   // }

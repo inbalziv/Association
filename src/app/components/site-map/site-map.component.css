@@ -27,17 +27,7 @@ a:hover {
 /* selected link */
 a:active {
   color: blue;
-}/*
-.leftSide {
-  margin-left: 10%;
-  margin-bottom: 3%;
 }
-
-.rightSide {
- padding-left: 60%;
-}
-*/
-
 table {
   border-collapse: separate;
   border-spacing: 220px 0;
